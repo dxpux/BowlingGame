@@ -6,4 +6,9 @@ public class Tennis
     {
         return "Love All";
     }
+
+    public void FirstPlayerScore()
+    {
+        throw new NotImplementedException();
+    }
 }
