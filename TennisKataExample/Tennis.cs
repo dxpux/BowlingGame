@@ -4,6 +4,6 @@ public class Tennis
 {
     public string Score()
     {
-        throw new NotImplementedException();
+        return "Love All";
     }
 }
