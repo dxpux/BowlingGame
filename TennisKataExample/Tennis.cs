@@ -6,14 +6,14 @@ public class Tennis
 
     public string Score()
     {
-        if (_firstPlayerScoreTimes == 1)
+        var scoreLookup = new Dictionary<int, string>()
         {
-            return "Fifteen Love";
-        }
-
-        if (_firstPlayerScoreTimes == 2)
+            { 1, "Fifteen" },
+            { 2, "Thirty" },
+        };
+        if (_firstPlayerScoreTimes == 1 || _firstPlayerScoreTimes == 2)
         {
-            return "Thirty Love";
+            return $"{scoreLookup[_firstPlayerScoreTimes]} Love";
         }
 
         return "Love All";
