@@ -30,6 +30,13 @@ public class TennisTest
         ScoreShouldBe("Thirty Love");
     }
 
+    [Test]
+    public void Forty_Love()
+    {
+        GivenFirstPlayerScore(3);
+        ScoreShouldBe("Forty Love");
+    }
+
     private void GivenFirstPlayerScore(int times)
     {
         for (int i = 0; i < times; i++)
