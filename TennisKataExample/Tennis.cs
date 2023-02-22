@@ -10,8 +10,9 @@ public class Tennis
         {
             { 1, "Fifteen" },
             { 2, "Thirty" },
+            { 3, "Forty" },
         };
-        if (_firstPlayerScoreTimes == 1 || _firstPlayerScoreTimes == 2)
+        if (_firstPlayerScoreTimes > 0)
         {
             return $"{scoreLookup[_firstPlayerScoreTimes]} Love";
         }
